@@ -33,7 +33,7 @@ import android.widget.Button;
 
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 
-import org.cyanogenmod.cmparts.profiles.NFCProfileTagCallback;
+//import org.cyanogenmod.cmparts.profiles.NFCProfileTagCallback;
 import org.cyanogenmod.cmparts.widget.SwitchBar;
 import org.cyanogenmod.internal.cmparts.PartInfo;
 import org.cyanogenmod.internal.cmparts.PartsList;
@@ -52,7 +52,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
     public static final String EXTRA_SHOW_FRAGMENT_TITLE_RESID =
             ":settings:show_fragment_title_resid";
 
-    private NFCProfileTagCallback mNfcProfileCallback;
+    //private NFCProfileTagCallback mNfcProfileCallback;
 
     private CharSequence mInitialTitle;
 
@@ -139,12 +139,13 @@ public class PartsActivity extends SettingsDrawerActivity implements
         return true;
     }
 
-    public void setNfcProfileCallback(NFCProfileTagCallback callback) {
-        mNfcProfileCallback = callback;
-    }
+    //public void setNfcProfileCallback(NFCProfileTagCallback callback) {
+    //    mNfcProfileCallback = callback;
+    //}
 
     @Override
     protected void onNewIntent(Intent intent) {
+        /*
         if (NfcAdapter.ACTION_TAG_DISCOVERED.equals(intent.getAction())) {
             Tag detectedTag = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG);
             if (mNfcProfileCallback != null) {
@@ -152,6 +153,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
             }
             return;
         }
+        */
         super.onNewIntent(intent);
     }
 
