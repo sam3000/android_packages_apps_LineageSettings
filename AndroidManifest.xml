@@ -161,7 +161,7 @@
         </activity-alias>
 
         <!-- Status bar settings (dashboard) -->
-        <activity-alias
+        <!--<activity-alias
             android:name=".statusbar.StatusBarSettings"
             android:label="@string/status_bar_title"
             android:targetActivity="PartsActivity">
@@ -182,7 +182,7 @@
             <meta-data
                 android:name="org.cyanogenmod.settings.summary.key"
                 android:value="status_bar_settings" />
-        </activity-alias>
+        </activity-alias>-->
 
         <!-- Anonymous Statistics -->
         <receiver android:name=".cmstats.ReportingServiceManager"
