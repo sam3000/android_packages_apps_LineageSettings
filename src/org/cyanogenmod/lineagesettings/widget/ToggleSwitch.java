@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.cyanogenmod.lineagesettings.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;

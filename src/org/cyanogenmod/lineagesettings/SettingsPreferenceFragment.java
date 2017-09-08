@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts;
+package org.cyanogenmod.lineagesettings;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -45,10 +45,10 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.animation.*;
 
-import org.cyanogenmod.cmparts.widget.CustomDialogPreference;
-import org.cyanogenmod.cmparts.widget.DialogCreatable;
-import org.cyanogenmod.cmparts.widget.FloatingActionButton;
-import org.cyanogenmod.cmparts.widget.LayoutPreference;
+import org.cyanogenmod.lineagesettings.widget.CustomDialogPreference;
+import org.cyanogenmod.lineagesettings.widget.DialogCreatable;
+import org.cyanogenmod.lineagesettings.widget.FloatingActionButton;
+import org.cyanogenmod.lineagesettings.widget.LayoutPreference;
 
 import java.util.Arrays;
 import java.util.UUID;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.cyanogenmod.lineagesettings.widget;
 
 import android.content.Context;
 import android.content.Intent;
@@ -32,7 +32,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.cyanogenmod.cmparts.R;
+import org.cyanogenmod.lineagesettings.R;
 
 import java.util.Collections;
 import java.util.LinkedList;

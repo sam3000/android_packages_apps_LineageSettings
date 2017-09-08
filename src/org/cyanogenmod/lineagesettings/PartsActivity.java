@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts;
+package org.cyanogenmod.lineagesettings;
 
 import android.app.Fragment;
 import android.app.FragmentTransaction;
@@ -33,10 +33,10 @@ import android.widget.Button;
 
 import com.android.settingslib.drawer.SettingsDrawerActivity;
 
-//import org.cyanogenmod.cmparts.profiles.NFCProfileTagCallback;
-import org.cyanogenmod.cmparts.widget.SwitchBar;
-import org.cyanogenmod.internal.cmparts.PartInfo;
-import org.cyanogenmod.internal.cmparts.PartsList;
+//import org.cyanogenmod.lineagesettings.profiles.NFCProfileTagCallback;
+import org.cyanogenmod.lineagesettings.widget.SwitchBar;
+import org.cyanogenmod.internal.lineagesettings.PartInfo;
+import org.cyanogenmod.internal.lineagesettings.PartsList;
 
 public class PartsActivity extends SettingsDrawerActivity implements
         PreferenceFragment.OnPreferenceStartFragmentCallback,
@@ -62,7 +62,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
     public void onCreate(Bundle bundle) {
         super.onCreate(bundle);
 
-        setContentView(R.layout.cmparts);
+        setContentView(R.layout.lineagesettings);
 
         String action = getIntent().getAction();
         ComponentName cn = getIntent().getComponent();
@@ -188,7 +188,7 @@ public class PartsActivity extends SettingsDrawerActivity implements
         }
 
         Intent intent = new Intent();
-        intent.setComponent(PartsList.CMPARTS_ACTIVITY);
+        intent.setComponent(PartsList.LINEAGESETTINGS_ACTIVITY);
         intent.putExtra(EXTRA_SHOW_FRAGMENT, fragmentClass);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_ARGUMENTS, args);
         intent.putExtra(EXTRA_SHOW_FRAGMENT_TITLE_RESID, titleRes);

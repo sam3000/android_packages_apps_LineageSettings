@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.cyanogenmod.cmparts.search;
+package org.cyanogenmod.lineagesettings.search;
 
 import android.database.Cursor;
 import android.database.MatrixCursor;
@@ -21,9 +21,9 @@ import android.provider.SearchIndexablesProvider;
 import android.util.ArraySet;
 import android.util.Log;
 
-import org.cyanogenmod.cmparts.search.Searchable.SearchIndexProvider;
-import org.cyanogenmod.internal.cmparts.PartInfo;
-import org.cyanogenmod.internal.cmparts.PartsList;
+import org.cyanogenmod.lineagesettings.search.Searchable.SearchIndexProvider;
+import org.cyanogenmod.internal.lineagesettings.PartInfo;
+import org.cyanogenmod.internal.lineagesettings.PartsList;
 import org.cyanogenmod.platform.internal.R;
 
 import java.lang.reflect.Field;
@@ -54,14 +54,14 @@ import static android.provider.SearchIndexablesContract.COLUMN_INDEX_XML_RES_RES
 import static android.provider.SearchIndexablesContract.INDEXABLES_RAW_COLUMNS;
 import static android.provider.SearchIndexablesContract.INDEXABLES_XML_RES_COLUMNS;
 import static android.provider.SearchIndexablesContract.NON_INDEXABLES_KEYS_COLUMNS;
-import static org.cyanogenmod.internal.cmparts.PartsList.CMPARTS_ACTIVITY;
+import static org.cyanogenmod.internal.lineagesettings.PartsList.LINEAGESETTINGS_ACTIVITY;
 
 /**
  * Provides search metadata to the Settings app
  */
-public class CMPartsSearchIndexablesProvider extends SearchIndexablesProvider {
+public class LineageSettingsSearchIndexablesProvider extends SearchIndexablesProvider {
 
-    private static final String TAG = CMPartsSearchIndexablesProvider.class.getSimpleName();
+    private static final String TAG = LineageSettingsSearchIndexablesProvider.class.getSimpleName();
 
     private static final String FIELD_NAME_SEARCH_INDEX_DATA_PROVIDER =
             "SEARCH_INDEX_DATA_PROVIDER";
@@ -85,8 +85,8 @@ public class CMPartsSearchIndexablesProvider extends SearchIndexablesProvider {
             ref[COLUMN_INDEX_XML_RES_CLASS_NAME] = null;
             ref[COLUMN_INDEX_XML_RES_ICON_RESID] = R.drawable.ic_launcher_cyanogenmod;
             ref[COLUMN_INDEX_XML_RES_INTENT_ACTION] = i.getAction();
-            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_PACKAGE] = CMPARTS_ACTIVITY.getPackageName();
-            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_CLASS] = CMPARTS_ACTIVITY.getClassName();
+            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_PACKAGE] = LINEAGESETTINGS_ACTIVITY.getPackageName();
+            ref[COLUMN_INDEX_XML_RES_INTENT_TARGET_CLASS] = LINEAGESETTINGS_ACTIVITY.getClassName();
             cursor.addRow(ref);
         }
         return cursor;
@@ -138,9 +138,9 @@ public class CMPartsSearchIndexablesProvider extends SearchIndexablesProvider {
                 ref[COLUMN_INDEX_RAW_INTENT_ACTION] = raw.intentAction != null ?
                         raw.intentAction : i.getAction();
                 ref[COLUMN_INDEX_RAW_INTENT_TARGET_PACKAGE] = raw.intentTargetPackage != null ?
-                        raw.intentTargetPackage : CMPARTS_ACTIVITY.getPackageName();
+                        raw.intentTargetPackage : LINEAGESETTINGS_ACTIVITY.getPackageName();
                 ref[COLUMN_INDEX_RAW_INTENT_TARGET_CLASS] = raw.intentTargetClass != null ?
-                        raw.intentTargetClass : CMPARTS_ACTIVITY.getClassName();
+                        raw.intentTargetClass : LINEAGESETTINGS_ACTIVITY.getClassName();
                 ref[COLUMN_INDEX_RAW_KEY] = raw.key != null ?
                         raw.key : i.getName();
                 ref[COLUMN_INDEX_RAW_USER_ID] = -1;

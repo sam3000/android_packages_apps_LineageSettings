@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.widget;
+package org.cyanogenmod.lineagesettings.widget;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -27,7 +27,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import org.cyanogenmod.cmparts.R;
+import org.cyanogenmod.lineagesettings.R;
 
 public class LayoutPreference extends Preference {
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.cyanogenmod.cmparts.sounds;
+package org.cyanogenmod.lineagesettings.sounds;
 
 import android.app.Activity;
 import android.content.Context;
@@ -30,8 +30,8 @@ import android.support.v7.preference.Preference;
 
 import cyanogenmod.providers.CMSettings;
 
-import org.cyanogenmod.cmparts.R;
-import org.cyanogenmod.cmparts.SettingsPreferenceFragment;
+import org.cyanogenmod.lineagesettings.R;
+import org.cyanogenmod.lineagesettings.SettingsPreferenceFragment;
 
 public class ChargingSoundsSettings extends SettingsPreferenceFragment {
 
